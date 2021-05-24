@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Image Filter</h1>
+    <div>
+      <canvas id="canva"></canvas>
+    </div>
+    <div class="selectors">
+      <label for="file-input">Image: </label>
+      <input
+        type="file"
+        id="file-input"
+        multiple="false"
+        accept="image/*"
+        onchange="createNewImage()"
+      />
+    </div>
+    <div class="selectors">
+      <button class="custom-btn btn-7" onclick="doRed()">Turn Red</button>
+      <button class="custom-btn btn-7" onclick="grayScale()">Gray Scale</button>
+      <button class="custom-btn btn-7" onclick="addBorder()">Border</button>
+      <button class="custom-btn btn-7" onclick="strips()">Strips</button>
+      <button class="custom-btn btn-7" onclick="removeRed()">No Red</button>
+      <button class="custom-btn btn-7" onclick="removeGreen()">No Green</button>
+      <button class="custom-btn btn-7" onclick="removeBlue()">No Blue</button>
+      <button class="custom-btn btn-7" onclick="rainbow()">Rainbow</button>
+      <button class="custom-btn btn-7" onclick="blurImg()">Blur</button>
+    </div>
+    <hr />
+    <div class="selectors">
+      <button class="custom-btn btn-5" onclick="createNewImage()">Reset</button>
+    </div>
+
+    <script src="https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
